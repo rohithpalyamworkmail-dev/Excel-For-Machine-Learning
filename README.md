@@ -55,6 +55,3 @@ This project primarily focuses on the **early and most critical stages** of the 
 - 12+ frameworks
 
 ---
-
-## 📂 Project Structure
-
