@@ -68,7 +68,7 @@ with st.sidebar:
     options = option_menu(
         "Select the operation to perform",
         ["About The App","View Data","Delete Data","Optimize DataFrame","Attributes","Dashboard", "Compare DataFrames","Modifications","Filterations","Mathematical & Statistical",
-          "Update DataFrames", "Add & Delete", "Access", "Plot Data","Famous Machine Learning Steps","String Manipulation","GenAI","Exports","collaborate"],
+          "Update DataFrames", "Add & Delete", "Access", "Plot Data","Famous Machine Learning Steps","String Manipulation","GenAI","Exports"],
         icons=["eye","eraser","info-circle","info-circle", "columns","columns","search","columns", "pen", "pencil-square",
                "trash", "tools", "book","robot","pencil","sun","moon","meet"],
         menu_icon='gear',
@@ -183,9 +183,4 @@ elif options=="Update DataFrames":
     if selected_data:
         df = st.session_state["allData"][selected_data]
         updates = Updates(df)
-        updates.display()
-elif options=="collaborate":
-    if selected_data:
-        df = st.session_state["allData"][selected_data]
-        updates = Collaborate(df)
         updates.display()
