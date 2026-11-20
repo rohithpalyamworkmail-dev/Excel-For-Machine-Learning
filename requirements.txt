@@ -22,3 +22,4 @@ pyyaml
 textblob
 category-encoders
 pymongo
+phik==0.12.5
